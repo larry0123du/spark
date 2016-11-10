@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from engineering.purdue.edu/ECESS/spark/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 23 Oct 2016 00:45:27 GMT -->
+<head>
+  <meta charset="utf-8">
+  <title>The Spark Challenge</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/normal.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'css/animation.css')}}">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script>
+    if (/mobile/i.test(navigator.userAgent)) document.documentElement.className += ' w-mobile';
+  </script>
+  <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico')}}">
+  <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+</head>
+<body>
+  <div class="fix-header" id="home">
+    <div class="w-container">
+      <div class="w-nav" data-collapse="medium" data-animation="default" data-duration="400"></div>
+    </div>
+  </div>
+  <div class="fixed-header">
+    <div class="w-container container">
+      <div class="w-row">
+
+       <!--///////////////////////////////////////////////////////
+       // Logo section 
+       //////////////////////////////////////////////////////////-->
+
+
+        <div class="w-col w-col-3 logo">
+          <a href="#"><img class="logo" src="{{url_for('static', filename='images/logo.png')}}" alt="Elegance"></a>
+        </div>
+
+        <!--///////////////////////////////////////////////////////
+       // End Logo section 
+       //////////////////////////////////////////////////////////-->
+
+       
+
+       <!--///////////////////////////////////////////////////////
+       // Menu section 
+       //////////////////////////////////////////////////////////-->
+
+
+          <div class="w-nav navbar" data-collapse="medium" data-animation="default" data-duration="400" data-contain="1">
+            <div class="w-container nav">
+              <nav class="w-nav-menu nav-menu" role="navigation">
+
+                <a class="w-nav-link menu-li" href="#home">HOME</a>
+                <a class="w-nav-link menu-li" href="#about">ABOUT</a>
+                <a class="w-nav-link menu-li" href="#service">REGISTRATION</a>
+                <a class="w-nav-link menu-li" href="#portfolio">GALLERY</a>
+                <a class="w-nav-link menu-li" href="#team">SPONSORS</a>
+                <a class="w-nav-link menu-li" href="#contact">CONTACT</a>
+              </nav>
+              <div class="w-nav-button">
+                <div class="w-icon-nav-menu"></div>
+              </div>
+            </div>
+          </div>
+
+
+          <!--///////////////////////////////////////////////////////
+       // End Menu section 
+       //////////////////////////////////////////////////////////-->
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--///////////////////////////////////////////////////////
+       //  Slider section 
+       //////////////////////////////////////////////////////////-->
+
+
+  <div class="slidersection">
+    <div class="sp-slideshow">
+      
+        <input id="button-1" type="radio" name="radio-set" class="sp-selector-1" checked="checked"/>
+        <label for="button-1" class="button-label-1"></label>
+        <input id="button-2" type="radio" name="radio-set" class="sp-selector-2"/>
+        <label for="button-2" class="button-label-2"></label>
+        <input id="button-3" type="radio" name="radio-set" class="sp-selector-3"/>
+        <label for="button-3" class="button-label-3"></label>
+<!--        <input id="button-4" type="radio" name="radio-set" class="sp-selector-4"/>
+        <label for="button-4" class="button-label-4"></label>-->
+      
+        
+        <label for="button-1" class="sp-arrow sp-a1"></label>
+        <label for="button-2" class="sp-arrow sp-a2"></label>
+        <label for="button-3" class="sp-arrow sp-a3"></label>
+       <!-- <label for="button-4" class="sp-arrow sp-a4"></label>-->
+        
+        <div class="sp-content">
+          <div class="sp-parallax-bg"></div>
+          <ul class="sp-slider clearfix">
+            <li><img src="{{url_for('static', filename='images/slider/sparkF15.jpg')}}" alt="Spark Challenge"/></li>
+            <li><img src="{{url_for('static', filename='images/slider/slider4.jpg')}}" alt="QuadCopterISO"/></li>
+            <li><img src="{{url_for('static', filename='images/slider/slider5.jpg')}}" alt="QuadCopterTop"/></li>
+          </ul>
+        </div><!-- sp-content -->
+      </div><!-- sp-slideshow -->
+  </div>
+
+
+<!--///////////////////////////////////////////////////////
+       // End slider section 
+       //////////////////////////////////////////////////////////-->
+
+<div class="about-parlex" id="about">
+    <section class="parlex8-back">
+      <div class="w-container">
+        <h1 style="color:black">Friday, December 9th, 2016</h1>
+        <h1 style="color:black">Purdue Armory</h1>
+        <br>
+      </div>
+    </section>
+  </div>
+
+
+<!--///////////////////////////////////////////////////////
+       // About section 
+       //////////////////////////////////////////////////////////-->
+
+
+  <div class="about-parlex" id="about">
+    <section class="parlex7-back">
+      <div class="w-container">
+        <div id="">
+        <div class="wrap">
+          <div class="about">
+            <h1 class="about-heading">UNLEASH YOUR SPARK</h1>
+            <div class="about-text">WHAT IS THE SPARK CHALLENGE?</div>
+            <div class="sepreater"></div>
+          </div>
+          <p class="about-des"><strong>The Spark Challenge is a campus-wide, corporate-sponsored design competition, hosted by the School of Electrical and Computer Engineering in partnership with the ECE Student Society and General Motors.
+          <br><br>
+          The Spark Challenge is open to all undergraduate students of Purdue University. It allows students of any discipline to present their projects to the rest of campus and many corporate sponsors. This results in networking with representatives from some of the top leading industries in the nation, acting as a gateway to prospective employers.
+          <br><br>
+          This event is the chance for students from any and all majors to collaborate in developing various projects and show off their technical skills. </strong>
+          </p>
+          <img class="about-img" src="{{url_for('static', filename='images/about.jpg')}}"
+          alt="52de15aa5d3566c14300015e_about.png">
+        </div>
+      </div>
+      </div>
+    </section>
+  </div>
+
+
+<!--///////////////////////////////////////////////////////
+       // End about section 
+       //////////////////////////////////////////////////////////-->
+
+
+  
+<!--///////////////////////////////////////////////////////
+       // Who We Are Section
+       //////////////////////////////////////////////////////////-->
+
+
+<!--///////////////////////////////////////////////////////
+       // End Who We Are section 
+       //////////////////////////////////////////////////////////-->
+
+
+
+<!--///////////////////////////////////////////////////////
+       // Call to action section 
+       //////////////////////////////////////////////////////////--> 
+
+
+<!--///////////////////////////////////////////////////////
+       // Service section 
+       //////////////////////////////////////////////////////////-->
+
+
+  <section class="service-parlex" id="service">
+    <section class="parlex9-back">
+      <div class="w-container">
+        <div class="wrap">
+          <div class="service-combo">
+            <div class="services">
+              <h1 class="service-heading">REGISTRATION</h1>
+              <div class="services-text"><STRONG>THE PROJECT MUST MEET THE FOLLOWING REQUIREMENTS!</STRONG></div>
+              <div class="sepreater service"></div>
+            </div>
+            <div class="services-text"> <strong>
+               • The project must utilize at least <strong>one microcontroller, CPLD, or FPGA. </strong><br>
+               • Final product must be fully functional and packaged to <STRONG>prototyped stage.</STRONG>  <br>
+               • Each team must have a <strong>team captain</strong> and a <strong> maximum of four members. </strong><br>
+               • At least <strong>one team member </strong>must be present during the event.<br>
+               • A project poster of size 36"x48" is <bold>required</bold>  
+               <br><a href="https://sharepoint.ecn.purdue.edu/epics/teams/Public Documents/PosterPrintingF13.pdf">(Click here to learn about free printing at the Burton D. Morgan Building)</a><br>
+               
+                <br><br>
+
+                <h1 class="service-heading">Registration for Fall 2016 is available! <a href="/registration/2016">Click Here</a></h1>
+                
+             
+            </div>
+            
+        </div>
+      </div>
+    </section>
+  </section>
+
+<!--///////////////////////////////////////////////////////
+       // End Service section 
+       //////////////////////////////////////////////////////////-->
+
+
+<!--///////////////////////////////////////////////////////
+       // Process section 
+       //////////////////////////////////////////////////////////-->
+
+ 
+
+<!--///////////////////////////////////////////////////////
+       // End Process section 
+       //////////////////////////////////////////////////////////-->
+
+<!--///////////////////////////////////////////////////////
+       // Porfolio section 
+       //////////////////////////////////////////////////////////-->
+
+  <div class="portfolio-parlex" id="portfolio">
+    <div class="parlex8-back">
+      <div class="w-container">
+        <div class="wrap">
+          <div class="portfolio">
+            <h1 style="color: black" class="portfolio-heading">GALLERY</h1>
+            <div style="color: black" class="portfolio-text"><strong>PICTURES FROM THE SPARK CHALLENGE OF SPRING 2015</strong></div>
+            <div class="sepreater"></div>
+          </div>
+          <p class="porfolio-paragraph"></p>
+            <div class="container demo-1">
+      <ul class="grid cs-style-1">
+        <!--parse image dynamically - by Ruihang-->
+        {% for i in range(1,10) %}
+        <li>
+          <figure>
+            <img class="portfolio-images" src="{{url_for('static', filename='images/portfolio/')}}{{i}}.jpg" alt="img0{{i}}">
+            <figcaption>
+              <a href="{{url_for('static', filename='images/portfolio/1.jpg')}}">Take a look</a>
+            </figcaption>
+          </figure>
+        </li>
+        {% endfor %}
+        <!--<li>
+          <figure>
+            <img class="portfolio-images" src="{{url_for('static', filename='images/portfolio/2.jpg')}}" alt="img02">
+            <figcaption>
+             
+              <a href="images/portfolio/2.jpg">Take a look</a>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img class="portfolio-images" src="images/portfolio/4.jpg" alt="img04">
+            <figcaption>
+              
+              <a href="images/portfolio/4.jpg">Take a look</a>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img class="portfolio-images" src="images/portfolio/5.jpg" alt="img05">
+            <figcaption>
+             
+              <a href="images/portfolio/5.jpg">Take a look</a>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img class="portfolio-images" src="images/portfolio/3.jpg" alt="img03">
+            <figcaption>
+             
+              <a href="images/portfolio/3.jpg">Take a look</a>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img class="portfolio-images" src="images/portfolio/6.jpg" alt="img06">
+            <figcaption>
+             
+              <a href="images/portfolio/6.jpg">Take a look</a>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img class="portfolio-images" src="images/portfolio/7.jpg" alt="img07">
+            <figcaption>
+             
+              <a href="images/portfolio/7.jpg">Take a look</a>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img class="portfolio-images" src="images/portfolio/8.jpg" alt="img08">
+            <figcaption>
+              
+              <a href="images/portfolio/8.jpg">Take a look</a>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img class="portfolio-images" src="images/portfolio/9.jpg" alt="img09">
+            <figcaption>
+              <a href="images/portfolio/9.jpg">Take a look</a>
+            </figcaption>
+          </figure>
+        </li>-->
+      </ul>
+    </div><!-- /container -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--///////////////////////////////////////////////////////
+       // End Porfolio section 
+       //////////////////////////////////////////////////////////-->
+
+<!--///////////////////////////////////////////////////////
+       // Our-plan section 
+       //////////////////////////////////////////////////////////-->
+
+ 
+<!--///////////////////////////////////////////////////////
+       // End Our-Plan section 
+       //////////////////////////////////////////////////////////-->
+
+<!--///////////////////////////////////////////////////////
+       // Team section 
+       //////////////////////////////////////////////////////////-->
+
+  <div class="team-parlex" id="team">
+    <div class="parlex5-back">
+      <div class="w-container">
+        <div class="wrap">
+          <div class="team">
+            <h1 class="team">SPONSORS</h1>
+            <div class="sepreater team-sep"></div>
+          </div>
+          <div class="team-text">
+            <p class="team-text-para"><strong>We would like to sincerely thank our generous sponsors and organizers for helping make the ECE SPARK CHALLENGE a reality.</strong></p>
+          </div>
+          <img class="about-img" src="{{url_for('static', filename='images/Sponsors/gm.jpg')}}" width="20%" height="20%" alt="General Motors">
+
+          <img class="about-img" src="{{url_for('static', filename='images/Sponsors/qualcomm.png')}}" width="40%" height="40%" alt="Qualcomm">
+    
+          <img class="about-img" src="{{url_for('static', filename='images/Sponsors/nucor.png')}}" width="45%" height="45%" alt="Nucor">
+
+          <img class="about-img" src="{{url_for('static', filename='images/Sponsors/ms.png')}}" width="45%" height="45%" alt="Microsoft">
+
+          <img class="about-img" src="{{url_for('static', filename='images/Sponsors/marathon.png')}}" width="25%" height="25%" alt="Marathon">
+
+          <img class="about-img" src="{{url_for('static', filename='images/Sponsors/rockwell.png')}}" width="35%" height="35%" alt="Rockwell">
+          
+       <img class="about-img" src="{{url_for('static', filename='images/Sponsors/ecess.png')}}" alt="ECESS">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--///////////////////////////////////////////////////////
+       // End Team section 
+       //////////////////////////////////////////////////////////-->
+
+<!--///////////////////////////////////////////////////////
+       // Clients section 
+       //////////////////////////////////////////////////////////-->
+
+ 
+<!--///////////////////////////////////////////////////////
+       // End Clients section 
+       //////////////////////////////////////////////////////////-->
+
+<!--///////////////////////////////////////////////////////
+       // Contact section 
+       //////////////////////////////////////////////////////////-->
+
+  <div class="contact-parlex" id="contact">
+    <div class="parlex8-back">
+      <!--<div class="w-container">
+        <div class="wrap">
+          <div class="contact-div">
+            <h1 class="contact-heading" style="color:black;">CONTACT</h1>
+            <div class="sepreater"></div>
+          </div>
+          <p class="contact-para" style="color:black">Thanks for taking the time to contact us! Please feel free to ask any questions you may have!
+            <br>We do our best to respond quickly, it could take us 1-2 business days to get back to you.</p>
+          <div class="w-form">
+            <form action="contact.php" method="post">
+            <label for="name">Name:</label>
+             <input class="w-input" type="text" placeholder="Enter your name" name="cf_name">
+           <label for="email">Email Address:</label>
+             <input class="w-input" placeholder="Enter your email address" type="text" name="cf_email" required="required">
+           <label for="email">Your Message:</label>
+             <textarea class="w-input message" placeholder="Enter your Message Here" name="cf_message"></textarea><br>
+           <input class="w-button" type="submit" value="Send">
+         </form>
+          <div class="w-form-done">
+              <p>Thank you! Your submission has been received!</p>
+            </div>
+            <div class="w-form-fail">
+              <p>Oops! Something went wrong while submitting the form :(</p>
+            </div>
+          </div>
+        </div>
+      </div>-->
+      <div class="w-container">
+        <div class="w-widget w-widget-map contac-map" data-widget-latlng="40.4280178,-86.9162323" data-widget-style="roadmap" data-widget-zoom="12" data-widget-tooltip="Purdue Armory"></div>
+      </div>
+      <div class="w-container">
+        <div class="w-row contact-col" style="text-center">
+          <div class="w-col w-col-7 contact-col1">
+            <div>
+                      <div class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a">
+                       <a href="#set-5" class="hi-icon hi-icon-earth">Partners</a>
+                    </div>
+              <h4 class="contact-col-head">Visit Us</h4>
+            </div>
+            <div>
+              <div class="contact-col-text-bar-last">Electrical Engineering Building, Room, 232, 475 Northwestern Ave.
+                <br>West Lafayette, IN, 47906</div>
+            </div>
+          </div>
+          <div class="w-col w-col-4 contact-col2">
+            <div>
+               <div class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a">
+                       <a class="hi-icon hi-icon-mail">Partners</a>
+                    </div>
+              <h4 class="contact-col-head">Mail us</h4>
+            </div>
+            <div>
+              <div class="contact-col-text-bar-last">ecess@ecn.purdue.edu<br><br><br></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--///////////////////////////////////////////////////////
+       // End Contact section 
+       //////////////////////////////////////////////////////////-->
+
+<!--///////////////////////////////////////////////////////
+       // Footer section 
+       //////////////////////////////////////////////////////////-->  
+
+  <div class="footer-parlex">
+    <div class="parlex9-back">
+      <div class="w-container">
+        <div class="wrap">
+          <img class="footer-logo" src="{{url_for('static', filename='images/Sponsors/ecess.png')}}" alt="Elegance">
+          <div class="footer-social">
+            <div class="fotter-social-wrap" style="text-align:center">
+              <a href="https://www.facebook.com/ECEStudentSociety"><img class="fotter-social" src="{{url_for('static', filename='images/social/Facebook.png')}}" alt="Facebook"></a>
+             
+            </div>
+          </div>
+          <div>
+            <div class="fotter-text"><p class="fotter-quote"></p>
+              <p class="copyright-area">&copy;2015 ECESS. ALL RIGHTS RESERVED.</p><br>
+              <p class="copyright-area">Website Credit: Mrigank Jha and Cody Allen</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+       <!--///////////////////////////////////////////////////////
+       // End Footer section 
+       //////////////////////////////////////////////////////////-->
+
+  <script type="text/javascript" src="{{url_for('static', filename='js/jquery.js')}}"></script>
+  <script type="text/javascript" src="{{url_for('static', filename='js/normal.js')}}"></script>
+  <script type="text/javascript" src="{{url_for('static', filename='js/jquery-1.10.2.min.js')}}"></script>
+  <script type="text/javascript" src="{{url_for('static', filename='js/carousels.js')}}"></script>
+  <script type="text/javascript" src="{{url_for('static', filename='js/slider-modernizr.js')}}"></script>
+  <script src="{{url_for('static', filename='js/classie.js')}}"></script>
+  <script src="{{url_for('static', filename='js/portfolio-effects.js')}}"></script>
+  <script src="{{url_for('static', filename='js/toucheffects.js')}}"></script>
+  <script src="{{url_for('static', filename='js/modernizr.js')}}"></script>
+  <script src="{{url_for('static', filename='js/animation.js')}}"></script>
+
+</body>
+
+<!-- Mirrored from engineering.purdue.edu/ECESS/spark/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 23 Oct 2016 00:45:34 GMT -->
+</html>
